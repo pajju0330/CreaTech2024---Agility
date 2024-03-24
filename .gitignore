@@ -1,0 +1,24 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.cache
+/public/build
+build
+.env
+src/app/styles/app-compiled.css
+src/infrastructure/db/jira-clone.db
+src/infrastructure/db/sqlite.db
+src/infrastructure/db/sqlite.db-journal
+package-lock.json
+pnpm-lock.yaml
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+src/infrastructure/db/db.sqlite
+storybook-static
+.DS_Store
+.vercel
