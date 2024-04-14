@@ -61,18 +61,21 @@ const Chatbot = () => {
   return (
     <div
       style={{
-        width: '100%',
+        width: '40%',
         height: '80vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
         padding: '20px',
         overflow: 'hidden',
-        border: '1px solid #e0e0e0',
+        border: '1px solid whitesmoke',
+        background:'url("/images/projects/logo.jpg") center no-repeat',
+        backgroundSize: '100% 100%',
+        opacity: '0.7',
       }}
     >
       <div style={{ backgroundColor: '#f0f0f0', marginBottom: '10px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}>
-  <h1 style={{ color: '#579dff', textAlign: 'center', marginBottom: '10px', fontSize: '32px', fontFamily: 'Arial, sans-serif' }}>
+  <h1 style={{ color: '#111', textAlign: 'center', justifyContent:'center',alignItems:'center', fontSize: '32px' }}>
     Agility Chatbot
   </h1>
 </div>

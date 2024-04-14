@@ -86,13 +86,13 @@ const navItems: NavItemProps[] = [
   {
     href: "analytics",
     icon: <ImStatsDots size={20} />,
-    name: "Analytics",
+    name: "analytics",
   },
   {
     href: "backlog",
     icon: <BsListNested size={24} />,
-    name: "Backlog",
-    disabled: true,
+    name: "backlog",
+    // disabled: true,
   },
   {
     href: "server-error",

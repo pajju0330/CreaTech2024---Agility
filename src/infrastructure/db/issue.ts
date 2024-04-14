@@ -161,7 +161,8 @@ export const createIssueusingAI = async (query:String): Promise<IssueId> => {
   const model = genAI.getGenerativeModel({ model: "gemini-pro"});
   console.log(process.env.API_KEY);
 
-  const prompt = "I want to create jira issue for below problem " + query + `  export type CreateIssueInputData = {
+  const prompt = "Fow given query - " + query + ` - generate this type of object according to given query
+  CreateIssueInputData = {
     name: string;
     description: string;
     categoryId: CategoryId;
@@ -171,9 +172,9 @@ export const createIssueusingAI = async (query:String): Promise<IssueId> => {
     comments: Comment[];
   };
   remember - priority should be either "low", "medium" or "high"
-  this is my schema, fill the details professionally according to agile project standards and return ONLY the issue object in string form in which keys and values are enclosed in double quotes according to above schema
+  Fill the details professionally according to agile project standards and return ONLY the issue object in string form in which keys and values are enclosed in double quotes according to above schema
   `
-  
+  const prompt2 = "For give"
   const result = await model.generateContent(prompt);
   const response = await result.response;
   const text = response.text();

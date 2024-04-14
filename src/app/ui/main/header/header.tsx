@@ -25,8 +25,6 @@ export const Header = (): JSX.Element => {
         <Tooltip title="About">
           <button
             aria-label="About this website"
-            disabled
-            className={cx(iconBaseClass, "cursor-not-allowed")}
           >
             <HiQuestionMarkCircle size={24} />
           </button>
